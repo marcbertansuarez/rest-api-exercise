@@ -12,7 +12,9 @@ router.get('/', async (req, res, next) => {
         next(error)
     }
 });
-
+// @desc    Get one show
+// @route   GET /shows/:id
+// @access  Public
 router.get('/:id', async (req, res, next) => {
     const { id } = req.params;
     try {
@@ -22,7 +24,9 @@ router.get('/:id', async (req, res, next) => {
         next(error);
     }
 });
-
+// @desc    Create one show
+// @route   POST /shows
+// @access  Public
 router.post('/', async (req, res, next) => {
     const { title, creator, launched, genre, image, description } = req.body;
     try {
@@ -32,7 +36,9 @@ router.post('/', async (req, res, next) => {
         next(error);
     }
 })
-
+// @desc    Edit one show
+// @route   Put /shows/:id
+// @access  Public
 router.put('/:id', async (req, res, next) => {
     const { id } = req.params;
     const hola = req.body;
@@ -44,7 +50,9 @@ router.put('/:id', async (req, res, next) => {
         next(error);
     }
 });
-
+// @desc    Delete one show
+// @route   Delete /shows/:id
+// @access  Public
 router.delete('/:id', async (req, res, next) => {
     const { id } = req.params;
     try {
