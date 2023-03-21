@@ -17,7 +17,7 @@ const shows = [
     creator: "Masashi Kishimoto",
     launched: 1994,
     genre: "adventures",
-    image: "https://static.wikia.nocookie.net/naruto/images/a/a2/Naruto_Uzumaki_Parte_II_Anime.png/revision/latest?cb=20161013194453&path-prefix=es",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c9/Naruto_logo.svg",
     description: "Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki"
   },
   {

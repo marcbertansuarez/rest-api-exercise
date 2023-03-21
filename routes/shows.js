@@ -41,9 +41,9 @@ router.post('/', async (req, res, next) => {
 // @access  Public
 router.put('/:id', async (req, res, next) => {
     const { id } = req.params;
-    const hola = req.body;
+    const { title, creator, launched, genre, image, description } = req.body;
     try {
-        const editedShow = await Show.findByIdAndUpdate(id, {hola}, { new: true })
+        const editedShow = await Show.findByIdAndUpdate(id, req.body, { new: true })
         console.log(editedShow)
         res.status(200).json(editedShow);
     } catch (error) {
